@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: hsl(0, 0%, 20%);
+}
+.section1{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    border-bottom: 1px solid hsl(0, 0%, 93%);
+}
+
+header img{
+    height: 50px;
+}
+.nav_btn{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar1 ul a{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar1 li{
+    color: black;
+    transition: color 0.3s;
+}
+.navbar1 li:hover{
+    color: hsl(0, 0%, 70%);
+}
+.section1 button{
+    background-color: hsl(225, 100%, 45%);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    transition-duration: 0.3s;
+}
+.section1 button:hover{
+    background-color: hsl(225, 100%, 65%);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+.navbar2{
+    padding: 12px;
+    background: hsl(0, 0%, 17%);
+}
+.navbar2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.navbar2 a{
+    text-decoration: none;
+}
+.navbar2 li{
+    font-size: 1.25em;
+    color: white;
+    transition: color 0.3s;
+}
+.navbar2 li:hover{
+    color: hsl(0, 0%, 80%);
+}
+
+.welcome{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    padding: 50px 20px;
+}
+.welcome h2{
+    margin-bottom: 25px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: hsl(209, 100%, 42%);
+}
+.welcome p{
+    margin-bottom: 40px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: hsl(0, 0%, 25%);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding: 40px 20px 80px 20px;
+
+}
+.card{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.75px solid rgb(87, 87, 87);
+    color: rgb(63, 63, 63);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    transition-duration: 0.3s;
+}
+.card:hover{
+    background-color: hsl(0, 0%, 90%);
+}
+.card h2{
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: hsl(0, 0%, 13%);
+}
+.card p{
+    font-size: 0.95rem;
+    color: hsl(0, 0%, 33%);
+    line-height: 1.5;
+}
+.card i{
+    margin-bottom: 12px;
+    padding-top: 10px;
+    color: hsl(207, 100%, 42%);
+}
+.fleet{
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+.fleet h2{
+    font-size: 2em;
+    color: hsl(209, 100%, 42%);
+    padding: 20px 0 40px 0px;
+}
+.fleet-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px 0px 20px;
+}
+.fleet-card{
+    text-align: center;
+    width: 250px;
+    height: 200px;
+}
+.fleet-card i{
+    transition-duration: 0.3s;
+}
+.fleet-card i:hover {
+    transform: scale(1.05);
+    color: hsl(209, 100%, 70%);
+}
+.fleet-card a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.fleet-card a p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 20%);
+    transition: color 0.3s;
+}
+.fleet-card a p:hover {
+    color: hsl(209, 100%, 42%);
+}
+.fleet button{
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    background-color: hsl(209, 100%, 42%);
+    color: white;
+    border: none;
+    transition-duration: 0.3s;
+}
+.fleet button:hover{
+    background-color: hsl(209, 100%, 82%);
+    color: hsl(0, 0%, 14%);
+}
+.trip{
+    background-color: hsl(0, 0%, 90%);
+    width: 80%;
+    margin: 60px auto;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.trip h2{
+    font-size: 2em;
+    color: hsl(209, 100%, 42%);
+    padding: 20px 0 10px 0px;
+}
+.trip p{
+    color: hsla(0, 0%, 18%, 0.768);
+    margin-bottom: 20px;
+}
+.trip button{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1em;
+    background-color: hsl(209, 100%, 42%);
+    color: white;
+    border: none;
+    transition-duration: 0.3s;
+}
+.trip button:hover{
+    background-color: hsl(209, 100%, 82%);
+    color: hsl(0, 0%, 14%);
+}
+
+
+.great{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.great h1{
+    font-size: 3em;
+    color: hsl(209, 100%, 42%);
+}
+.great-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto 40px auto;
+}
+.great-container div{
+    flex: 1 1 300px;
+    min-width: 400px;
+    max-width: 450px;
+    height: 200px;
+    border-radius: 10px;
+    color: rgb(29, 29, 29);
+    padding: 20px;
+    box-shadow: 0 5px 5px 5px hsla(0, 0%, 57%, 0.297);
+    transition: all 0.3s ease-in-out;
+}
+.great-container div:hover{
+    background-color: hsl(0, 0%, 97%);
+    transform: translateY(-5px);
+}
+.great-container h2{
+    padding-bottom: 10px;
+    color: hsl(209, 100%, 20%);
+}
+.great-container p{
+    font-size: 1em;
+}
+
+.booking {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.booking h2 {
+    margin-bottom: 20px;
+}
+.booking-form input, .booking-form select, .booking-form button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.booking-form button {
+    background-color: hsl(209, 100%, 42%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.booking-form button:hover {
+    background-color: #333;
+}
+
+.faq {
+    padding: 50px;
+    text-align: center;
+    color: ;
+}
+#faq-header{
+    color: hsl(209, 100%, 42%);
+}
+.faq h2 {
+    margin-bottom: 30px;
+}
+.faq-item {
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.faq-item h3 {
+    margin-bottom: 10px;
+}
+
+.newsletter {
+    padding: 50px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.newsletter form input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.newsletter form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(209, 100%, 42%);
+    color: white;
+    cursor: pointer;
+}
+.newsletter form button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    padding: 40px 20px 20px 20px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-section {
+    margin: 20px;
+    min-width: 200px;
+}
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 14px;
+}
