@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 body{
     background-color: white;
@@ -53,8 +54,7 @@ header img{
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 .navbar2{
-    padding: 12px;
-    background: hsl(0, 0%, 17%);
+    padding: 5px;
 }
 .navbar2 ul{
     list-style: none;
@@ -66,14 +66,12 @@ header img{
     text-decoration: none;
 }
 .navbar2 li{
+    padding: 10px;
+    border-radius: 10px;
+    transition: color 0.3s;
     font-size: 1.25em;
     color: white;
-    transition: color 0.3s;
 }
-.navbar2 li:hover{
-    color: hsl(0, 0%, 80%);
-}
-
 .welcome{
     text-align: center;
     max-width: 80%;
@@ -154,6 +152,9 @@ header img{
 }
 .fleet-card i{
     transition-duration: 0.3s;
+}
+.fleet-card a{
+    color: inherit;
 }
 .fleet-card i:hover {
     transform: scale(1.05);
@@ -284,7 +285,6 @@ header img{
 .faq {
     padding: 50px;
     text-align: center;
-    color: ;
 }
 #faq-header{
     color: hsl(209, 100%, 42%);
