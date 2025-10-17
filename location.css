@@ -1,0 +1,63 @@
+* { box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+.active{
+    border: 1px solid white;
+    border-radius: 12px;
+}
+.navbar2 li:hover{
+    background-color: white;
+    color: black;
+}
+main{
+    padding: 0px 20px 40px 20px;
+}
+.page-title {
+    text-align: center;
+    font-size: 2em;
+    margin: 30px 0 10px 0;
+    color: #333;
+}
+.title-content{
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+}
+.locations{
+    max-width: 1100px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 0 20px;
+}
+.locationCard{
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    transition-duration: 0.3s;
+}
+.locationCard:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.30);
+}
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: #2b6ef6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #174cb9;
+}
+.map {
+    text-align: center;
+    margin: 50px 0;
+}
+.map
